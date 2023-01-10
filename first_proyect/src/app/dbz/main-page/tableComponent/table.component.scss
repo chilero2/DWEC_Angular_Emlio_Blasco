@@ -1,12 +1,18 @@
 .table {
-    width: 40.625rem;
+  width: 40.625rem;
+  display: flex;
+  justify-content: space-between;
+
+  &__items {
     display: flex;
-    justify-content: space-between;
+    flex-flow: column nowrap;
+    align-items: center;
 
-    &__items {
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-    }
+    width: 25rem;
+  }
 
+  &__title {
+    text-decoration-line: underline;
+    text-decoration-color: black;
+  }
 }

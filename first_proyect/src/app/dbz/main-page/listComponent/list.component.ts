@@ -9,9 +9,12 @@ import { Personaje } from '../../Personaje';
 })
 export class ListComponent {
   
+  personajes: Personaje[] = []
   
   constructor(private personajesService: PersonajesService) {}
+  ngOnInit() {
+    this.personajes = this.personajesService.getPersonajes()
+  }
   
-  personajes:Personaje[] = this.personajesService.getPersonajes()
 
 }

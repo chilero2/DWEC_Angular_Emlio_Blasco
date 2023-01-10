@@ -1,3 +1,6 @@
-<ul>
-    <li *ngFor="let personaje of personajes">{{ personaje.nombre }} --> {{ personaje.poder.toFixed(3) }}</li>
+<ul class="list">
+  <li *ngFor="let personaje of personajes" class="list__item">
+    <span class="list__nombre">{{ personaje.nombre }}</span>
+    <span class="list__poder">{{ personaje.poder.toFixed(3) }}</span>
+  </li>
 </ul>

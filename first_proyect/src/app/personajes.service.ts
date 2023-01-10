@@ -6,7 +6,11 @@ import {Personaje} from './dbz/Personaje'
 })
 export class PersonajesService {
 
-  personajes: Personaje[] = []
+  personajes: Personaje[] = [
+    new Personaje('Goku', 20.000),
+    new Personaje('Vegueta', 10.000),
+    new Personaje('Krilin', 8.000)
+  ]
 
   constructor() { }
 

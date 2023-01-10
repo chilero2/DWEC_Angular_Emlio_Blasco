@@ -1,0 +1,16 @@
+.list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  width: 9.375rem;
+
+  &__item {
+    line-height: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__nombre {
+    color: lightcoral;
+    font-weight: bold;
+  }
+}

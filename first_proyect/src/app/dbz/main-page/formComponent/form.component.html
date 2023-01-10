@@ -1,21 +1,23 @@
-<form (ngSubmit)="agregar()">
-  <div>
+<form (ngSubmit)="agregar()" class="form">
+  <div class="form__element">
     <label
       ><input
         type="text"
         placeholder="Nombre:"
         name="nombre"
         [(ngModel)]="nombre"
+        class="form__input"
     /></label>
   </div>
-  <div>
+  <div class="form__element">
     <label
       ><input
         type="number"
         placeholder="Poder"
         name="poder"
         [(ngModel)]="poder"
+        class="form__input"
     /></label>
   </div>
-  <button type="submit">Agregar</button>
+  <button type="submit" class="form__button">Agregar</button>
 </form>

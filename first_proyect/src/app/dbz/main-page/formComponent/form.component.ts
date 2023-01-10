@@ -7,7 +7,7 @@ import { Personaje } from '../../Personaje';
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
-  styleUrls: ['./form.component.scss']
+  styleUrls: ['../../../app.component.scss','./form.component.scss']
 })
 export class FormComponent {
 
@@ -22,8 +22,12 @@ agregar() {
   if (this.nombre.trim().length !== 0) {
     const nuevoPersonaje = new Personaje(this.nombre, this.poder)
     this.personajesService.agregarPersonajes(nuevoPersonaje)
-    console.log(this.personajesService.getPersonajes())
+    this.nombre = ''
+    this.poder = 0
+  } else {
+    alert('No has introducido nigún nombre')
   }
+
 
 
 }

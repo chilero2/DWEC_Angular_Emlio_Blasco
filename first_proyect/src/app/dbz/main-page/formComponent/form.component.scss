@@ -1,0 +1,19 @@
+.form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  &__element {
+    margin-bottom: 1rem;
+  }
+  &__input {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    box-shadow: 2px 2px 5px #333;
+  }
+
+  &__button {
+    width: 100%;
+  }
+}
