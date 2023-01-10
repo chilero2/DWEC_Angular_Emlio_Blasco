@@ -1,0 +1,12 @@
+.table {
+    width: 40.625rem;
+    display: flex;
+    justify-content: space-between;
+
+    &__items {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+}
