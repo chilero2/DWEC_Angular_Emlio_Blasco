@@ -27,8 +27,5 @@ agregar() {
   } else {
     alert('No has introducido nigún nombre')
   }
-
-
-
 }
 }

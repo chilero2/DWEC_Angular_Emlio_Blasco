@@ -8,6 +8,7 @@ import { DbzModule } from './dbz/dbz.module';
 import { PersonajesService } from './personajes.service';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,7 @@ import { PersonajesService } from './personajes.service';
     BrowserModule,
     HeroesModule,
     ContadorModule,
-    DbzModule
+    DbzModule,
   ],
   providers: [
     PersonajesService

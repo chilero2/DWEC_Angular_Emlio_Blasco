@@ -1,0 +1,24 @@
+<h2 class="title">Agregar Villanos</h2>
+<form (ngSubmit)="agregar()" class="form">
+    <div class="form__element">
+      <label
+        ><input
+          type="text"
+          placeholder="Nombre:"
+          name="nombre"
+          [(ngModel)]="villano.nombre"
+          class="form__input"
+      /></label>
+    </div>
+    <div class="form__element">
+      <label
+        ><input
+          type="number"
+          placeholder="Poder"
+          name="poder"
+          [(ngModel)]="villano.poder"
+          class="form__input"
+      /></label>
+    </div>
+    <button type="submit" class="form__button">Agregar</button>
+  </form>
