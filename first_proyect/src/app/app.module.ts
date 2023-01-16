@@ -6,6 +6,7 @@ import { HeroesModule } from './heroes/heroes.module';
 import { ContadorModule } from './contadores/contadores.module';
 import { DbzModule } from './dbz/dbz.module';
 import { PersonajesService } from './personajes.service';
+import { DbzService } from './dbz/services/dbz.service';
 
 
 
@@ -21,7 +22,8 @@ import { PersonajesService } from './personajes.service';
     DbzModule,
   ],
   providers: [
-    PersonajesService
+    PersonajesService,
+    DbzService
   ],
   bootstrap: [AppComponent]
 })

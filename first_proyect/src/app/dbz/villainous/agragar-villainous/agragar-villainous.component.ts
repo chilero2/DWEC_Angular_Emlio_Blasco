@@ -1,31 +1,31 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Villano } from '../../interfaces/dbz.interfaces';
 
 @Component({
   selector: 'app-agragar-villainous',
   templateUrl: './agragar-villainous.component.html',
-  styleUrls: ['../../../app.component.scss','./agragar-villainous.component.scss'],
+  styleUrls: [
+    '../../../app.component.scss',
+    './agragar-villainous.component.scss',
+  ],
 })
 export class AgragarVillainousComponent {
-  @Input() villanos: Villano[] = [];
-  villano: Villano = {
+  nuevo: Villano = {
     nombre: '',
     poder: 0,
   };
 
+  @Output() OnNuevoVillano: EventEmitter<Villano> = new EventEmitter();
+
   agregar() {
-    if (this.villano.nombre.trim().length !== 0) {
-      const nuevo = (this.villano = {
-        nombre: this.villano.nombre,
-        poder: this.villano.poder,
-      });
-      this.villanos.push(nuevo);
+    if (this.nuevo.nombre.trim().length !== 0) {
+      this.OnNuevoVillano.emit(this.nuevo);
+      this.nuevo = {
+        nombre: '',
+        poder: 0,
+      };
     } else {
       alert('No has introducido nigún nombre');
     }
-    this.villano = {
-      nombre: '',
-      poder: 0,
-    };
   }
 }
