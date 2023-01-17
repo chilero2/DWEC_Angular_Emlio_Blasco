@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Villano } from '../interfaces/dbz.interfaces';
 import { DbzService } from '../services/dbz.service';
+import { Personaje } from '../Personaje';
 
 @Component({
   selector: 'app-villainous',
@@ -8,14 +9,5 @@ import { DbzService } from '../services/dbz.service';
   styleUrls: ['./villainous.component.scss'],
 })
 export class VillainousComponent {
-  villanos: Villano[] = [
-    { nombre: 'célula', poder: 30 },
-    { nombre: 'freezer', poder: 25 },
-  ];
-
-  agregarNuevoVillano(argumento: Villano) {
-    this.villanos.push(argumento);
-  }
-
-  constructor(private DbzService: DbzService) {}
+  constructor() {}
 }
