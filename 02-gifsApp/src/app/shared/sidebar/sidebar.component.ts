@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { GifsService } from '../../gifs/service/gifs.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -11,7 +12,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 export class SidebarComponent  {
 
-  get()
+  get gifs(){
+    return this.gifsService.historial
+  }
+
+  constructor(private gifsService: GifsService) {}
 
 
 
