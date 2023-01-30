@@ -15,8 +15,13 @@ export class SidebarComponent  {
   get gifs(){
     return this.gifsService.historial
   }
-
   constructor(private gifsService: GifsService) {}
+
+  buscar(gif:string) {
+    console.log(gif)
+    this.gifsService.buscarGifs(gif)
+  }
+
 
 
 
