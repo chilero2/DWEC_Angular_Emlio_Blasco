@@ -2,26 +2,22 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PrimeNgModule } from './prime-ng/prime-ng.module';
 import { SharedModule } from './shared/shared.module';
-import { GifsModule } from './gifs/gifs.module';
-
-import {HttpClientModule} from '@angular/common/http'
-
+import { AppRouterModule } from './app-router.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    
+    
   ],
   imports: [
-    BrowserModule,
-    NgbModule,
+    BrowserModule,  
+    PrimeNgModule,
     SharedModule,
-    GifsModule,
-
-    HttpClientModule,
-
+    AppRouterModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
