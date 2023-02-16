@@ -5,6 +5,7 @@ import { NoComunesComponent } from './pages/no-comunes/no-comunes.component';
 import { NumerosComponent } from './pages/numeros/numeros.component';
 import { OrdenarComponent } from './pages/ordenar/ordenar.component';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
+import { RippleModule } from 'primeng/ripple';
 
 
 
@@ -23,7 +24,9 @@ import { PrimeNgModule } from '../prime-ng/prime-ng.module';
     NumerosComponent,
     NoComunesComponent,
     BasicosComponent,
-    OrdenarComponent
+    OrdenarComponent,
+    RippleModule
+
   ]
 })
 export class VentasModule { }
